@@ -44,22 +44,27 @@ header>div {
     max-height: 50px;
     max-width: 50px; 
     border-radius: 50%;
-    margin-left: 10px;
 }
 
-.userName {
-    line-height: 60px;
+.boldText {
     font-weight: 500;
+    font-size: 14px;
 }
 
-.fas {
+
+
+.greyIcons {
     color: #b1b1b1;
     margin-right: 15px;
     line-height: 60px;
 }
 
-.lastSeen {
-    font-size: 11px;
+.greyColor {
+    color: #b1b1b1;
+}
+
+.textDescription {
+    font-size: 12px;
     color: rgb(126, 126, 126);
 }
 
@@ -67,3 +72,17 @@ header>div {
     height: 70px;
     background-color: #8edafc;
 }
+
+.lightBlue-icon {
+    color: #8edafc;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.white-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+

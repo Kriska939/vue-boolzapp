@@ -29,33 +29,57 @@
         <div class="row gx-0">
             <div class="col-4">
                 <header>
-                    <div>
-                        <img src="./img/avatar_io.jpg" alt="Avatar Personale" class="miniature-avatar">
-                        <span class="userName">Nome Utente</span>
+                    <div class="pt-2">
+                        <img src="./img/avatar_io.jpg" alt="Avatar Personale" class="miniature-avatar ms-2">
+                        <span class="boldText">Nome Utente</span>
                     </div>
                     <div>
-                        <i class="fas fa-circle-notch fa-lg"></i>
-                        <i class="fas fa-comment-alt fa-lg"></i>
-                        <i class="fas fa-ellipsis-v fa-lg"></i>
+                        <i class="fas fa-circle-notch fa-lg greyIcons"></i>
+                        <i class="fas fa-comment-alt fa-lg greyIcons"></i>
+                        <i class="fas fa-ellipsis-v fa-lg greyIcons"></i>
                     </div>
                 </header>
-                <div id="lightblue-alert">
 
-                </div>
+                <!-- SEZIONE ALERT BLU-->
+                <section id="lightblue-alert" class="d-flex">
+                    <div class="white-circle mt-2 ms-3 me-2">
+                        <i class=" fas fa-bell-slash fa-lg lightBlue-icon"></i>
+                    </div>
+                    <div class="mt-2">
+                        <span class="boldText">Ricevi notifiche di nuovi messaggi
+                        </span>
+                        <p class="textDescription text-decoration-underline">Attiva notifiche desktop</p>
+                    </div>
+                </section>
+
+                <section id="userSearch">
+                    <nav class="navbar navbar-light bg-light">
+                        <form class="container-fluid">
+                            <div class="input-group pe-2 ps-2">
+                                <button class=" input-group-text bg-white" id="basic-addon1"><i
+                                        class="fas fa-search fa-lg greyColor"></i></button>
+                                <input type="text" class="form-control textDescription"
+                                    placeholder="Cerca o inizia una nuova chat">
+                            </div>
+                        </form>
+                    </nav>
+                </section>
+
             </div>
             <div class="col-8">
                 <header>
-                    <div>
-                        <img src="./img/avatar_1.jpg" alt="Avatar" class="miniature-avatar">
-                        <span class="userName">Michele
-                        </span>
-                        <span class="lastSeen">Ultimo accesso eseguito il</span>
-
+                    <div class="d-flex pt-2">
+                        <img src="./img/avatar_1.jpg" alt="Avatar" class="miniature-avatar ms-2">
+                        <div>
+                            <span class="boldText">Michele
+                            </span>
+                            <p class="textDescription">Ultimo accesso eseguito il</p>
+                        </div>
                     </div>
                     <div>
-                        <i class="fas fa-search fa-lg"></i>
-                        <i class="fas fa-paperclip fa-lg"></i>
-                        <i class="fas fa-ellipsis-v fa-lg"></i>
+                        <i class="fas fa-search fa-lg greyIcons"></i>
+                        <i class="fas fa-paperclip fa-lg greyIcons"></i>
+                        <i class="fas fa-ellipsis-v fa-lg greyIcons"></i>
                     </div>
                 </header>
             </div>
