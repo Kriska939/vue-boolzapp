@@ -11,16 +11,59 @@ body {
     background: linear-gradient(to top, #d8dbd6 15% 82%, #009688 18%);
 }
 
+/* CUSTOM */
+
 .row {
     padding-top: 30px;
-    height: 500px;
+    height: 550px;
 
 }
 
 .col-4 {
     background-color: white;
+    border-right: 2px solid #009688;
 }
 
 .col-8 {
     background-image: url("../img/mine.jpg");
+}
+
+header {
+    height: 60px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>div {
+    height: 60px;
+}
+
+
+.miniature-avatar {
+    max-height: 50px;
+    max-width: 50px; 
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.userName {
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.fas {
+    color: #b1b1b1;
+    margin-right: 15px;
+    line-height: 60px;
+}
+
+.lastSeen {
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+}
+
+#lightblue-alert {
+    height: 70px;
+    background-color: #8edafc;
 }
