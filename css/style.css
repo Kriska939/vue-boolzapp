@@ -1,0 +1,26 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #d8dbd6 15% 82%, #009688 18%);
+}
+
+.row {
+    padding-top: 30px;
+    height: 500px;
+
+}
+
+.col-4 {
+    background-color: white;
+}
+
+.col-8 {
+    background-image: url("../img/mine.jpg");
+}
