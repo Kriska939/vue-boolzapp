@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- SCRIPT DATABASE-->
-    <script src="./js/users.js"></script>
+    <script src="./js/data.js"></script>
 
     <!-- VUE-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -37,9 +37,9 @@
                 <header class="flex-shrink-0 d-flex justify-content-between">
                     <div class="media user-me">
                         <figure>
-                            <img :src="`img/avatar${user.avatar}.jpg`" :alt="user.name" />
+                            <img :src="`img/avatar${data.user.avatar}.jpg`" :alt="data.user.name" />
                         </figure>
-                        <div class="h6 media-text">{{ user.name }}</div>
+                        <div class="h6 media-text">{{ data.user.name }}</div>
                     </div>
                     <div>
                         <i class="fas fa-circle-notch fa-lg greyIcons clickable"></i>
@@ -76,7 +76,7 @@
                 <!-- USERS LIST-->
                 <section class="flex-grow-1 overflow-auto bg-white">
                     <ul class="m-0 p-0">
-                        <li class="media" v-for="contact in contacts">
+                        <li class="media" v-for="contact in data.contacts">
                             <figure>
                                 <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name" />
                             </figure>
