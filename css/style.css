@@ -80,6 +80,11 @@ header, footer {
     border-radius: 50%;
   }
 
+  li.media:hover {
+    cursor: pointer;
+    background-color: #eaeaea;
+  }
+
 /* COLORING */
 
 .greyIcons {
