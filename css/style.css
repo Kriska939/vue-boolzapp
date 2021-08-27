@@ -31,27 +31,45 @@ body {
 header {
     height: 60px;
     background-color: #eaeaea;
-    display: flex;
-    justify-content: space-between;
 }
 
 header>div {
     height: 60px;
 }
 
+.media {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .media figure {
+    height: 70px;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
 
-.miniature-avatar {
-    max-height: 50px;
-    max-width: 50px; 
+  .media img {
+    height: 100%;
+    max-width: 100%;
     border-radius: 50%;
-}
+  }
+  
+  .media .media-text {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
 
-.boldText {
-    font-weight: 500;
-    font-size: 14px;
-}
-
-
+  .media .white-circle {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+  }
 
 .greyIcons {
     color: #b1b1b1;
@@ -75,14 +93,6 @@ header>div {
 
 .lightBlue-icon {
     color: #8edafc;
-    line-height: 50px;
-    margin-left: 10px;
 }
 
-.white-circle {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-}
 

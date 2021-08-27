@@ -27,11 +27,13 @@
 <body>
     <main class="container">
         <div class="row gx-0">
-            <div class="col-4">
-                <header>
-                    <div class="pt-2">
-                        <img src="./img/avatar_io.jpg" alt="Avatar Personale" class="miniature-avatar ms-2">
-                        <span class="boldText">Nome Utente</span>
+            <div class="col-4 d-flex flex-column">
+                <header class="flex-shrink-0 d-flex justify-content-between">
+                    <div class="media">
+                        <figure>
+                            <img src="img/avatar_io.jpg" alt="Silvia Rivella" />
+                        </figure>
+                        <div class="h6 media-text">Silvia Rivella</div>
                     </div>
                     <div>
                         <i class="fas fa-circle-notch fa-lg greyIcons"></i>
@@ -41,12 +43,12 @@
                 </header>
 
                 <!-- SEZIONE ALERT BLU-->
-                <section id="lightblue-alert" class="d-flex">
+                <section id="lightblue-alert" class="d-flex media">
                     <div class="white-circle mt-2 ms-3 me-2">
                         <i class=" fas fa-bell-slash fa-lg lightBlue-icon"></i>
                     </div>
                     <div class="mt-2">
-                        <span class="boldText">Ricevi notifiche di nuovi messaggi
+                        <span class="media-text">Ricevi notifiche di nuovi messaggi
                         </span>
                         <p class="textDescription text-decoration-underline">Attiva notifiche desktop</p>
                     </div>
@@ -57,7 +59,7 @@
                         <form class="container-fluid">
                             <div class="input-group pe-2 ps-2">
                                 <button class=" input-group-text bg-white" id="basic-addon1"><i
-                                        class="fas fa-search fa-lg greyColor"></i></button>
+                                        class="fas fa-search fa-sm greyColor"></i></button>
                                 <input type="text" class="form-control textDescription"
                                     placeholder="Cerca o inizia una nuova chat">
                             </div>
@@ -66,14 +68,19 @@
                 </section>
 
             </div>
-            <div class="col-8">
-                <header>
-                    <div class="d-flex pt-2">
-                        <img src="./img/avatar_1.jpg" alt="Avatar" class="miniature-avatar ms-2">
-                        <div>
-                            <span class="boldText">Michele
-                            </span>
-                            <p class="textDescription">Ultimo accesso eseguito il</p>
+            <div class="col-8 d-flex flex-column">
+                <header class="d-flex justify-content-between">
+                    <div class="media">
+                        <figure>
+                            <img src="img/avatar_1.jpg" alt="Robin" />
+                        </figure>
+                        <div class="h6 media-text">
+                            <div>Marco Lanci</div>
+                            <div class="textDescription">
+                                <small>Ultimo accesso oggi alle:
+                                    <time datetime="2021-08-03T012:53"> 12:53</time>
+                                </small>
+                            </div>
                         </div>
                     </div>
                     <div>
