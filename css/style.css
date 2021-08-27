@@ -11,13 +11,19 @@ body {
     background: linear-gradient(to top, #d8dbd6 15% 82%, #009688 18%);
 }
 
-/* CUSTOM */
-
-.row {
-    padding-top: 30px;
-    height: 550px;
-
+.structure-row {
+  height: 550px;
+  padding-top: 5%;
 }
+
+
+.clickable {
+    cursor: pointer;
+  }
+
+
+
+/* CUSTOM */
 
 .col-4 {
     background-color: white;
@@ -28,14 +34,18 @@ body {
     background-image: url("../img/mine.jpg");
 }
 
-header {
-    height: 60px;
+header, footer {
     background-color: #eaeaea;
 }
 
-header>div {
-    height: 60px;
+#chat header,
+#chat footer, 
+.user-me
+ {
+  height: 60px;
 }
+
+/* MEDIA */
 
 .media {
     height: 100%;
@@ -71,6 +81,8 @@ header>div {
     border-radius: 50%;
   }
 
+/* COLORING */
+
 .greyIcons {
     color: #b1b1b1;
     margin-right: 15px;
@@ -96,3 +108,33 @@ header>div {
 }
 
 
+/* MESSAGES */
+.message-balloon {
+    display: flex;
+    margin-top: 5px;
+  }
+  .message-balloon.sent {
+    justify-content: flex-end;
+  }
+  
+  .message-balloon.received {
+    justify-content: flex-start;
+  }
+
+  .message-balloon.sent .message {
+    background-color: #d5f9ba;
+  }
+  
+  .message-balloon.received .message {
+    background-color: #fff;
+  }
+  
+  .message p {
+    margin-bottom: 0;
+  }
+  .message time {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;
+  }

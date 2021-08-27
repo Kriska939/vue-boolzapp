@@ -26,19 +26,19 @@
 
 <body>
     <main class="container">
-        <div class="row gx-0">
+        <div class="row structure-row gx-0">
             <div class="col-4 d-flex flex-column">
                 <header class="flex-shrink-0 d-flex justify-content-between">
-                    <div class="media">
+                    <div class="media user-me">
                         <figure>
                             <img src="img/avatar_io.jpg" alt="Silvia Rivella" />
                         </figure>
                         <div class="h6 media-text">Silvia Rivella</div>
                     </div>
                     <div>
-                        <i class="fas fa-circle-notch fa-lg greyIcons"></i>
-                        <i class="fas fa-comment-alt fa-lg greyIcons"></i>
-                        <i class="fas fa-ellipsis-v fa-lg greyIcons"></i>
+                        <i class="fas fa-circle-notch fa-lg greyIcons clickable"></i>
+                        <i class="fas fa-comment-alt fa-lg greyIcons clickable"></i>
+                        <i class="fas fa-ellipsis-v fa-lg greyIcons clickable"></i>
                     </div>
                 </header>
 
@@ -50,7 +50,7 @@
                     <div class="mt-2">
                         <span class="media-text">Ricevi notifiche di nuovi messaggi
                         </span>
-                        <p class="textDescription text-decoration-underline">Attiva notifiche desktop</p>
+                        <p class="textDescription text-decoration-underline clickable">Attiva notifiche desktop</p>
                     </div>
                 </section>
 
@@ -82,7 +82,7 @@
                 </section>
             </div>
             <!-- SEZIONE CHAT-->
-            <section class="col-8 d-flex flex-column">
+            <section class=" chat col-8 d-flex flex-column">
                 <header class="d-flex justify-content-between">
                     <div class="media">
                         <figure>
@@ -98,33 +98,46 @@
                         </div>
                     </div>
                     <div>
-                        <i class="fas fa-search fa-lg greyIcons"></i>
-                        <i class="fas fa-paperclip fa-lg greyIcons"></i>
-                        <i class="fas fa-ellipsis-v fa-lg greyIcons"></i>
+                        <i class="fas fa-search fa-lg greyIcons clickable"></i>
+                        <i class="fas fa-paperclip fa-lg greyIcons clickable"></i>
+                        <i class="fas fa-ellipsis-v fa-lg greyIcons clickable"></i>
                     </div>
                 </header>
 
                 <!-- CHAT MESSAGES-->
 
-                <div class="">
+                <div class="flex-grow-1 overflow-auto">
                     <ul>
                         <li class="message-balloon sent">
+                            <div class="message p-2 rounded-3">
+                                <p>Hai portato a spasso il cane?</p>
+                                <time datetime="2021-08-03T09:53">10/01/2020 - 09:53</time>
+                            </div>
                         </li>
-                        <li class="message-balloon received"></li>
+                        <li class="message-balloon received">
+                            <div class="message p-2 rounded-3">
+                                <p>Sì!</p>
+                                <time datetime="2021-08-03T10:07">10/01/2020 - 10:07</time>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- FOOTER-->
 
-                <footer>
-
-                </footer class="container-fluid">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col"></div>
-                    <div class="col-1"></div>
-                </div>
-
+                <footer class="container-fluid">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-1">
+                            <i class="far fa-smile fa-2x text-muted clickable"></i>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Scrivi un messaggio" />
+                        </div>
+                        <div class="col-1">
+                            <i class="fas fa-microphone fa-2x text-muted clickable"></i>
+                        </div>
+                    </div>
+                </footer>
             </section>
         </div>
 
