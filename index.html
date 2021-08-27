@@ -76,12 +76,12 @@
                 <!-- USERS LIST-->
                 <section class="flex-grow-1 overflow-auto bg-white">
                     <ul class="m-0 p-0">
-                        <li class="media">
+                        <li class="media" v-for="contact in contacts">
                             <figure>
-                                <img src="img/avatar_1.jpg" alt="Robin" />
+                                <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name" />
                             </figure>
                             <div class="h6 media-text">
-                                <div>Robin</div>
+                                <div>{{ contact.name }}</div>
                             </div>
                         </li>
                     </ul>
