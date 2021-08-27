@@ -22,7 +22,6 @@ body {
   }
 
 
-
 /* CUSTOM */
 
 .col-4 {
@@ -86,7 +85,7 @@ header, footer {
 .greyIcons {
     color: #b1b1b1;
     margin-right: 15px;
-    line-height: 60px;
+    line-height: 70px;
 }
 
 .greyColor {
@@ -131,6 +130,7 @@ header, footer {
   
   .message p {
     margin-bottom: 0;
+    font-size: 13px;
   }
   .message time {
     display: block;
