@@ -37,9 +37,9 @@
                 <header class="flex-shrink-0 d-flex justify-content-between">
                     <div class="media user-me">
                         <figure>
-                            <img src="img/avatar_io.jpg" alt="Silvia Rivella" />
+                            <img :src="`img/avatar${user.avatar}.jpg`" :alt="user.name" />
                         </figure>
-                        <div class="h6 media-text">Silvia Rivella</div>
+                        <div class="h6 media-text">{{ user.name }}</div>
                     </div>
                     <div>
                         <i class="fas fa-circle-notch fa-lg greyIcons clickable"></i>
