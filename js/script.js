@@ -4,6 +4,11 @@ const app = new Vue({
     el: '#app',
     data: {
         data,
+        currentUser: 0,
     },
-    methods: {},
+    methods: {
+        setCurrentUser(index) {
+            this.currentUser = index;
+        }
+    },
 });
