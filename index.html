@@ -92,7 +92,8 @@
                 <header class="d-flex justify-content-between">
                     <div class="media">
                         <figure>
-                            <img :src="`img/avatar${data.contacts[currentUser].avatar}.jpg`" alt="Robin" />
+                            <img :src="`img/avatar${data.contacts[currentUser].avatar}.jpg`"
+                                :alt="'Avatar '+ `${data.contacts[currentUser].name}`" />
                         </figure>
                         <div class="h6 media-text">
                             <div>Robin</div>
