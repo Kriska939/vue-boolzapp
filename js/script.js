@@ -3,11 +3,12 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: '#app',
     data: {
+        currentUser: 0,
+        newText: "",
         user: {
             name: 'Nome Utente',
             avatar: '_io',
         },
-        currentUser: 0,
         contacts: [
             {
                 name: 'Michele',
