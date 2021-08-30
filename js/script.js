@@ -5,7 +5,7 @@ const app = new Vue({
     data: {
         currentUser: 0,
         newText: "",
-        searchedItem: "",
+        searchedName: "",
         user: {
             name: 'Nome Utente',
             avatar: '_io',
@@ -123,6 +123,12 @@ const app = new Vue({
             setTimeout(() => {
                 this.addMessage("okay", "received");
             }, 1000);
+        },
+
+        checkInclusion(contact) {
+            if (contact.name.trim().toLowerCase().includes(this.searchedName.trim().toLowerCase()) && contact.visible === true) return true;
+
+
         }
     },
 
