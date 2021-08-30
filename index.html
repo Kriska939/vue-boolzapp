@@ -21,6 +21,10 @@
     <!-- VUE-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+    <!-- DAY JS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+
     <title>BoolzApp</title>
 
 
@@ -130,8 +134,8 @@
                             <i class="far fa-smile fa-2x text-muted clickable ps-2"></i>
                         </div>
                         <div class="col-10">
-                            <input type="text" class="form-control m-2" v-model="newText"
-                                placeholder="Scrivi un messaggio" />
+                            <input type="text" class="form-control m-2" v-model.trim="newText"
+                                @keyup.enter="sendMessage" placeholder="Scrivi un messaggio" />
                         </div>
                         <div class="col-1">
                             <i class="

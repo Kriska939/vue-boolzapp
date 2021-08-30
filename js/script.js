@@ -98,7 +98,27 @@ const app = new Vue({
     methods: {
         setCurrentUser(index) {
             this.currentUser = index;
+        },
+
+        addMessage(text, status) {
+
+            const newMessage = {
+                date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                message: text,
+                status: status,
+            }
+
+            this.contacts[this.currentUser].messages.push(newMessage);
+        },
+
+        sendMessage() {
+            // check stringa vuota:
+            if (!this.newText) return;
+
+            this.addMessage(this.newText, "sent");
+            this.newText = "";
         }
     },
+
 });
 
