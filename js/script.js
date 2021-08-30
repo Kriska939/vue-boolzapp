@@ -117,6 +117,11 @@ const app = new Vue({
 
             this.addMessage(this.newText, "sent");
             this.newText = "";
+
+            // risposta automatica dopo 1sec:
+            setTimeout(() => {
+
+            }, 1000);
         }
     },
 
