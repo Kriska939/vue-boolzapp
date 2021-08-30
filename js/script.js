@@ -120,7 +120,7 @@ const app = new Vue({
 
             // risposta automatica dopo 1sec:
             setTimeout(() => {
-
+                this.addMessage("okay", "received");
             }, 1000);
         }
     },
