@@ -5,6 +5,7 @@ const app = new Vue({
     data: {
         currentUser: 0,
         newText: "",
+        searchedItem: "",
         user: {
             name: 'Nome Utente',
             avatar: '_io',
